@@ -1,0 +1,18 @@
+def replace_elements(arr):
+        
+    index = 0
+    arr_len = len(arr)
+    out_arr = []
+    
+    for _ in arr:
+        if arr and index < arr_len-1:
+            out_arr.append(max(arr[index+1:arr_len]))
+        else:
+            out_arr.append(-1)
+        index = index + 1
+    
+    return out_arr
+
+if __name__=="__main__":
+    arr = [17, 4, 1, 2, 5]
+    print(replace_elements(arr))

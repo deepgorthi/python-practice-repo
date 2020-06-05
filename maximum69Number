@@ -1,0 +1,6 @@
+def maximum69Number(num):
+    return str(num)
+
+if __name__ == "__main__":
+    num = 9969
+    print(maximum69Number(num))
